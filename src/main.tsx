@@ -1,0 +1,1 @@
+import { StrictMode } from 'react';\nimport { createRoot } from 'react-dom/client';\nimport App from './App.tsx';\nimport './index.css';\n\ncreateRoot(document.getElementById('root')!).render(\n  \u003cStrictMode\u003e\n    \u003cApp /\u003e\n  \u003c/StrictMode\u003e\n);
