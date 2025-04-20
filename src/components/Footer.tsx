@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Adithya Sasi</h3>
             <p className="text-gray-400 mb-4">
-              Full Stack Developer & UI/UX Designer based in San Francisco, California.
+              Full Stack Developer & UI/UX Designer based in India.
             </p>
             <p className="text-gray-400">
               Specializing in creating beautiful, functional websites and applications.
