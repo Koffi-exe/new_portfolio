@@ -59,17 +59,17 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-400 mb-2">
-              San Francisco, California
+              Kochi/Indore, India
             </p>
             <p className="text-gray-400 mb-2">
-              your.email@example.com
+              adithyaasasi@gmail.com
             </p>
             <p className="text-gray-400 mb-4">
-              +1 (123) 456-7890
+              +91 8085775955
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Koffi-exe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/adithya-sasi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-10 pt-8">
           <p className="text-center text-gray-400">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Adithya Sasi.
           </p>
           <p className="text-center text-gray-500 text-sm mt-2 flex items-center justify-center">
             Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> using React
