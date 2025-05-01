@@ -36,12 +36,12 @@ const projectsData: Project[] = [
     liveUrl: 'https://google-auth0.vercel.app/',
   },
   {
-    title: 'Fitness Tracking App',
-    description: 'A mobile-first web application for tracking workouts, setting fitness goals, and visualizing progress over time.',
+  title: 'Fitness Tracking App',
+    description: 'Under Development, The links are not available yet.',
     technologies: ['React Native', 'GraphQL', 'AWS', 'Chart.js'],
     image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-    githubUrl: 'https://github.com/username/fitness-tracker',
-    liveUrl: 'https://example-fitness.com',
+    githubUrl: '#',
+    liveUrl: '#',
   },
   {
     title: 'Weather Forecast App',
