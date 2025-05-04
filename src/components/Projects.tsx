@@ -36,19 +36,19 @@ const projectsData: Project[] = [
     liveUrl: 'https://google-auth0.vercel.app/',
   },
   {
-  title: 'Fitness Tracking App',
-    description: 'Under Development, The links are not available yet.',
-    technologies: ['React Native', 'GraphQL', 'AWS', 'Chart.js'],
-    image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-    githubUrl: '#',
-    liveUrl: '#',
+  title: 'Node Server on AWS EC2',
+    description: 'A Node.js server deployed on AWS EC2. (Might not be live, to save costs 🤑)',
+    technologies: ['Node.js', 'AWS EC2', 'Express'],
+    image: 'https://icon.icepanel.io/AWS/svg/Compute/EC2.svg',
+    githubUrl: 'https://github.com/Koffi-exe/AWS-server',
+    liveUrl: 'http://54.175.255.7:3000/',
   },
   {
     title: 'Weather Forecast App',
     description: 'A weather application with 7-day forecasts, location-based weather data, and interactive maps for global weather patterns.',
     technologies: ['React', 'Redux', 'OpenWeather API', 'Mapbox'],
     image: 'https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-    githubUrl: 'https://github.com/username/weather-app',
+    githubUrl: 'https://github.com/',
     liveUrl: 'https://example-weather.com',
   },
 ];
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
-            My Projects
+            Projects and Works
           </h2>
           <div className="mt-4 max-w-3xl mx-auto">
             <p className="text-xl text-gray-600 dark:text-gray-300">
