@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    user_name: "",
+    user_email: "",
+    subject: "",
+    message: "",
+    phone: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -21,18 +25,47 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setIsSubmitting(false);
-      setSubmitted(true);
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
-    }, 1500);
+    emailjs
+      .sendForm(
+        "service_fpqxqbm",
+        "template_9vn7fmj",
+        e.target as HTMLFormElement,
+        "9Eb-Pa1xKodo4JdI1"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          setFormData({
+            user_name: "",
+            user_email: "",
+            subject: "",
+            message: "",
+            phone: "",
+          });
+          setIsSubmitting(false);
+          setSubmitted(true);
+          setTimeout(() => {
+            emailjs
+              .sendForm(
+                "service_fpqxqbm",
+                "template_wiysw6i",
+                e.target as HTMLFormElement,
+                "9Eb-Pa1xKodo4JdI1"
+              )
+              .then((result) => {
+                console.log("Email reply sent successfully:", result.text);
+              },
+              (error) => {
+                console.error("Error sending email reply:", error.text);
+              });
+            setSubmitted(false);
+          }, 4000);
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          setIsSubmitting(false);
+        }
+      );
   };
 
   return (
@@ -44,7 +77,8 @@ const Contact: React.FC = () => {
           </h2>
           <div className="mt-4 max-w-3xl mx-auto">
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!
+              Have a project in mind or want to discuss potential opportunities?
+              I'd love to hear from you!
             </p>
           </div>
         </div>
@@ -100,7 +134,7 @@ const Contact: React.FC = () => {
                     Location
                   </p>
                   <p className="text-base font-medium text-gray-900 dark:text-white">
-                    Indore/Kochi, India 
+                    Indore/Kochi, India
                   </p>
                 </div>
               </div>
@@ -147,7 +181,6 @@ const Contact: React.FC = () => {
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                 </a>
-                
               </div>
             </div>
           </div>
@@ -176,8 +209,25 @@ const Contact: React.FC = () => {
                   <input
                     type="text"
                     id="name"
-                    name="name"
-                    value={formData.name}
+                    name="user_name"
+                    value={formData.user_name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  >
+                    Your Phone
+                  </label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
@@ -194,8 +244,8 @@ const Contact: React.FC = () => {
                   <input
                     type="email"
                     id="email"
-                    name="email"
-                    value={formData.email}
+                    name="user_email"
+                    value={formData.user_email}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
@@ -243,8 +293,8 @@ const Contact: React.FC = () => {
                   disabled={isSubmitting}
                   className={`w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 ${
                     isSubmitting
-                      ? 'opacity-70 cursor-not-allowed'
-                      : 'hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                      ? "opacity-70 cursor-not-allowed"
+                      : "hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   }`}
                 >
                   {isSubmitting ? (
