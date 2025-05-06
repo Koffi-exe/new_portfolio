@@ -165,7 +165,7 @@ const Contact: React.FC = () => {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" netlify>
                 <div>
                   <label
                     htmlFor="name"
