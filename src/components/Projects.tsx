@@ -51,6 +51,14 @@ const projectsData: Project[] = [
     githubUrl: 'https://github.com/',
     liveUrl: 'https://example-weather.com',
   },
+  {
+    title:'Linux Commands Repository',
+    description: 'A comprehensive repository of Linux commands, categorized and searchable for easy reference.',  
+    technologies: ["Linux", "Bash", "Markdown"],
+    image:"https://images.pexels.com/photos/11035358/pexels-photo-11035358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    githubUrl:'https://github.com/Koffi-exe/Linux-Commands',
+    liveUrl:'#'  
+  }
 ];
 
 const Projects: React.FC = () => {
