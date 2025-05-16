@@ -52,12 +52,12 @@ const projectsData: Project[] = [
     liveUrl: 'https://example-weather.com',
   },
   {
-    title:'Linux Commands Repository',
-    description: 'A comprehensive repository of Linux commands, categorized and searchable for easy reference.',  
-    technologies: ["Linux", "Bash", "Markdown"],
+    title:'Linux Academy',
+    description: "A web application that provides a collection of Linux commands and tutorials for beginners and advanced users.",  
+    technologies: ["Linux", "Bash", "Markdown", "Xterm", "React", "Tailwind CSS", "Node.js", "AWS EC2"],
     image:"https://images.pexels.com/photos/11035358/pexels-photo-11035358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    githubUrl:'https://github.com/Koffi-exe/Linux-Commands',
-    liveUrl:'#'  
+    githubUrl:'https://github.com/Koffi-exe/LinuxAcadmey',
+    liveUrl:'https://linux-acadmey-git-main-koffi-exes-projects.vercel.app/'  
   }
 ];
 
