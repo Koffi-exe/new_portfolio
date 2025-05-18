@@ -41,7 +41,7 @@ const projectsData: Project[] = [
     technologies: ['Node.js', 'AWS EC2', 'Express'],
     image: 'https://icon.icepanel.io/AWS/svg/Compute/EC2.svg',
     githubUrl: 'https://github.com/Koffi-exe/AWS-server',
-    liveUrl: 'http://54.175.255.7:3000/',
+    liveUrl: 'http://54.175.255.7:4000/',
   },
   {
     title: 'Weather Forecast App',
