@@ -17,7 +17,7 @@ const projectsData: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     image: 'https://images.pexels.com/photos/48195/document-agreement-documents-sign-48195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     githubUrl: 'https://github.com/Koffi-exe/Signature-Downloader',
-    liveUrl: 'https://signature-downloader.vercel.app/',
+    liveUrl: 'https://signature-downloader-git-main-koffi-exes-projects.vercel.app/',
   },
   {
     title: 'QR Code Generator',
