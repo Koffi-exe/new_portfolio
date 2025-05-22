@@ -48,8 +48,8 @@ const projectsData: Project[] = [
     description: 'A weather application with 7-day forecasts, location-based weather data, and interactive maps for global weather patterns.',
     technologies: ['React', 'Redux', 'OpenWeather API', 'Mapbox'],
     image: 'https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-    githubUrl: 'https://github.com/',
-    liveUrl: 'https://example-weather.com',
+    githubUrl: 'https://github.com/Koffi-exe/Weather_apk',
+    liveUrl: 'https://weather-apk-git-main-koffi-exes-projects.vercel.app/',
   },
   {
     title:'Linux Academy',
