@@ -28,6 +28,14 @@ const projectsData: Project[] = [
     liveUrl: 'https://qr-maker-git-master-koffi-exes-projects.vercel.app/',
   },
   {
+    title: 'Keyboard Heatmap',
+    description: 'A webpage to track keystrokes',
+    technologies: ['React', 'JavaScript','Tailwind CSS'],
+    image: 'https://images.pexels.com/photos/532173/pexels-photo-532173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    githubUrl: 'https://github.com/Koffi-exe/Key_heat_map',
+    liveUrl: 'https://key-heat-map-git-main-koffi-exes-projects.vercel.app/',
+  },
+  {
     title: 'Google authentication with React',
     description: 'A web application that allows users to sign in using their Google account, with secure authentication and user management.',
     technologies: ['React', 'Firebase', 'tailwind CSS'],
