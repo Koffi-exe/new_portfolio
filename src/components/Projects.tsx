@@ -12,6 +12,25 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: "Message X",
+    description:
+      "A web application that allows users to send and receive messages in real-time, with features like global chat, private messaging, and user authentication.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "Render",
+      "WebSocket",
+      "Socket.IO",
+    ],
+    image:
+      "https://images.pexels.com/photos/6146929/pexels-photo-6146929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    githubUrl: "https://github.com/Koffi-exe/MessageX",
+    liveUrl: "https://message-x-git-master-koffi-exes-projects.vercel.app/",
+  },
+  {
     title: "House Help",
     description:
       "A web application that connects users with local house help, allowing them to book and manage appointments easily.",
