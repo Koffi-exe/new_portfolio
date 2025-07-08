@@ -28,7 +28,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/6146929/pexels-photo-6146929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/MessageX",
-    liveUrl: "https://message-x-git-master-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://message-x-nine.vercel.app/",
   },
   {
     title: "House Help",
@@ -44,7 +44,7 @@ const projectsData: Project[] = [
     ],
     image:
       "https://images.pexels.com/photos/6647057/pexels-photo-6647057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    githubUrl: "https://github.com/Koffi-exe/House-Help",
+    githubUrl: "https://house-help-fawn.vercel.app/",
     liveUrl: "https://house-help-git-main-koffi-exes-projects.vercel.app/",
   },
   {
@@ -64,7 +64,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/11035358/pexels-photo-11035358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/LinuxAcadmey",
-    liveUrl: "https://linux-acadmey-git-main-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://house-help-fawn.vercel.app/",
   },
   {
     title: "Signature Downloader",
@@ -75,7 +75,7 @@ const projectsData: Project[] = [
       "https://images.pexels.com/photos/48195/document-agreement-documents-sign-48195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/Signature-Downloader",
     liveUrl:
-      "https://signature-downloader-git-main-koffi-exes-projects.vercel.app/",
+      "https://signature-downloader.vercel.app/",
   },
   {
     title: "Certificate Generator",
@@ -86,7 +86,7 @@ const projectsData: Project[] = [
       "https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/Certificate-Generator",
     liveUrl:
-      "https://certificate-generator-git-master-koffi-exes-projects.vercel.app/",
+      "https://certificate-generator-sand-two.vercel.app/",
   },
   {
     title: "QR Code Generator",
