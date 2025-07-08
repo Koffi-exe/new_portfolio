@@ -96,7 +96,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/278430/pexels-photo-278430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/QRMaker",
-    liveUrl: "https://qr-maker-git-master-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://qr-maker-ten.vercel.app/",
   },
   {
     title: "Keyboard Heatmap",
@@ -105,7 +105,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/532173/pexels-photo-532173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/Key_heat_map",
-    liveUrl: "https://key-heat-map-git-main-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://key-heat-map.vercel.app/",
   },
   {
     title: "Text to Speech ",
@@ -114,7 +114,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/1611001/pexels-photo-1611001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     githubUrl: "https://github.com/Koffi-exe/TTS",
-    liveUrl: "https://tts-git-master-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://tts-opal-five.vercel.app/",
   },
   {
     title: "Google authentication with React",
@@ -127,15 +127,6 @@ const projectsData: Project[] = [
     liveUrl: "https://google-auth0.vercel.app/",
   },
   {
-    title: "Node Server on AWS EC2",
-    description:
-      "A Node.js server deployed on AWS EC2. (Might not be live, to save costs 🤑)",
-    technologies: ["Node.js", "AWS EC2", "Express"],
-    image: "https://icon.icepanel.io/AWS/svg/Compute/EC2.svg",
-    githubUrl: "https://github.com/Koffi-exe/AWS-server",
-    liveUrl: "http://54.175.255.7:4000/",
-  },
-  {
     title: "Weather Forecast App",
     description:
       "A weather application with 7-day forecasts, location-based weather data, and interactive maps for global weather patterns.",
@@ -143,7 +134,7 @@ const projectsData: Project[] = [
     image:
       "https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     githubUrl: "https://github.com/Koffi-exe/Weather_apk",
-    liveUrl: "https://weather-apk-git-main-koffi-exes-projects.vercel.app/",
+    liveUrl: "https://weather-apk-two.vercel.app/",
   },
 ];
 
